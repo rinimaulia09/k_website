@@ -27,3 +27,9 @@ def detail_produk(request, id):
     'produk': data,
   }
   return HttpResponse(template.render(context, request))
+
+def dt(request):
+  context = {
+  }
+  template = loader.get_template('dt.html')
+  return HttpResponse(template.render(context, request))
