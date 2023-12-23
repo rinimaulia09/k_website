@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>halaman</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+   <nav>
+    <div class="brand">
+        <a href="">My Website</a>
+    </div>
+    <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="/produk">Menu</a></li>
+        <li><a href="">Login</a></li>
+    </ul>
+   </nav>
+   
+        <center>
+            <h1>SELAMAT DATANG DI WARUNG RM ASELA</h1>
+                <p>Asela adalah warung makan pertama yang berkonsep makan dipinggir pantai laut with a view and kinda instagramale place i think.</p>
+                <p>yang terletak di desa terpencil desa sejati dusun gruggak kec camplong kab sampang </p>
+                <p>masakannya enak,sambelnya juara,harganya juga masih reasonable,dan sekarang masih banyak pojok-pojok buat selfinya</p>
+                <p>mungkin kalau ada tipe-tipe orang yang suka eksis di medsos pasti suka ke sini.apalagi ketika sore hari menjelang sunset,viewnya bagus sekali.</p>
+            </center>
+        </body>
+
+        <h1>{{ judul }}</h1>
+        <h1>{{ sub_judul }}</h1>
+        <ol>
+            {% for data in kategori %}
+            <li>{{data.nama}}</li>
+            {% endfor %}
+        </ol>
+    </head>
+</html>
