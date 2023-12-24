@@ -2,18 +2,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: rgb(112, 111, 111);
+    background: rgb(207, 208, 214);
 }
 
 header {
-    background: linear-gradient(to right, #020202, #b4b3b3);
-    color :white;
+    background: rgb(91, 91, 92);
+    color :rgb(253, 249, 249);
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 nav {
-    background: linear-gradient(to right, #020202, #b4b3b3);
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 1);
+    background: linear-gradient(to right, #989494, #a7a1a1);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, .1);
 }
 
 nav ul {
@@ -22,11 +22,11 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, #020202, #b4b3b3);
+    
 
 }
 nav ul li {
-    margin: 0;
+    margin: 10px;
 }
 nav ul li a{
     color: white;
@@ -35,6 +35,38 @@ nav ul li a{
     border-radius: 5px;
     transition: 0.5s ease;
 }
-nav ul li a:hover{
-    background-color: aqua;
+nav ul li a:hover,
+nav ul li a.activate {
+    background-color: rgb(2, 2, 2);
 }
+.container {
+    max-width: 950px;
+    height: 510px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255, 249, 249);
+}
+.library{
+    text-align: center;
+}
+.library h2{
+    color: #333;
+}
+.library p{
+    color: #666;
+}
+.pos{
+    display: flex;
+}
+.card{
+    width: 280px;
+}
+.card-image{
+    width: 250px;
+    margin: 5px auto 10px;
+}
+.card-image img{
+    width: 175px;
+    height: 250px;
+}
+

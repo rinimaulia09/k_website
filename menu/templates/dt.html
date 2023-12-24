@@ -10,14 +10,79 @@
 </head>
 <body>
     <header>
-  <h1>Library</h1>
-</header>
-  <nav>
-   <ul>
-    <li><a href ="">Beranda</a></li>
-    <li><a href ="">Data</a></li>
-   </ul>
-  </nav>
+      <h1>Library</h1>
+    </header>
+    <nav>
+    <ul>
+        <li><a href ="#" class="active">Beranda</a></li>
+        <li><a href ="">Data</a></li>
+        <li><a href ="/members">Logout</a></li>
+    </ul>
+    </nav>
+    <div class="container">
+    <div class="library">
+      <h2>SELAMAT DATANG DIPERPUSTAKAAN </h2>
+      <P>Menyediakan koleksi buku yang terbaru dan terbaik</P>
+    </div>
+    <div class="pos">
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'a.jpg' %}" alt="judul buku">
+        </div>
+        <div class="card-details">
+          <h3 class="book-title">Tips Belajar Komputer</h3>
+          <p class="book-details">Penulis : alinea</p>
+          <p class="book-details">Tahun Terbit : 2021</p>
+        </div>
+        <div class="button">
+          <button class="">Pinjam</button>
+          <button class="">Detail</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'b.jpg' %}" alt="judul buku">
+        </div>
+        <div class="card-details">
+          <h3 class="book-title">Komunikasi Bisnis</h3>
+          <p class="book-details">Penulis : Intan Oktaviani</p>
+          <p class="book-details">Tahun Terbit : 2022</p>
+        </div>
+        <div class="button">
+          <button class="">Pinjam</button>
+          <button class="">Detail</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'c.jpg' %}" alt="judul buku">
+        </div>
+        <div class="card-details">
+          <h3 class="book-title">Perilaku Organisasi</h3>
+          <p class="book-details">Penulis : M.Taufiq</p>
+          <p class="book-details">Tahun Terbit : 2021</p>
+        </div>
+        <div class="button">
+          <button class="">Pinjam</button>
+          <button class="">Detail</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'd.jpeg' %}" alt="judul buku">
+        </div>
+        <div class="card-details">
+          <h3 class="book-title">Perilaku Organisasi</h3>
+          <p class="book-details">Penulis : Amir Mahmud</p>
+          <p class="book-details">Tahun Terbit : 2021</p>
+        </div>
+        <div class="button">
+          <button class="">Pinjam</button>
+          <button class="">Detail</button>
+        </div>
+      </div>
+    </div>
+    </div>
         </body>
     </head>
 </html>
