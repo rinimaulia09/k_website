@@ -33,3 +33,9 @@ def dt(request):
   }
   template = loader.get_template('dt.html')
   return HttpResponse(template.render(context, request))
+
+def book(request):
+  context = {
+  }
+  template = loader.get_template('book.html')
+  return HttpResponse(template.render(context, request))
