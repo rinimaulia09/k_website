@@ -5,8 +5,8 @@ from .models import kategori, Produk
 def members(request):
   data = kategori.objects.all()
   context = {
-    "judul":"welcome",
-    "sub_judul" :"website",
+    "judul":"",
+    "sub_judul" :"",
     "kategori" : data,
   }
   template = loader.get_template('index.html')
