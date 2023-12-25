@@ -46,23 +46,23 @@ nav ul li a.activate {
     padding: 20px;
     background-color: rgb(255, 249, 249);
 }
-.library{
+.brand{
     text-align: center;
 }
-.library h2{
+.brand h2{
     color: #333;
 }
-.library p{
+.brand p{
     color: #666;
 }
 .pos{
     display: flex;
 }
 .card{
-    width: 780px;
+    width: 280px;
 }
 .card-image{
-    width: 750px;
+    width: 250px;
     margin: 5px auto 10px;
 }
 .card-image img{
