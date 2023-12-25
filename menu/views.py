@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.template import loader
-from .models import kategori, Produk
+from .models import kategori, Produk 
 
 def members(request):
   data = kategori.objects.all()
