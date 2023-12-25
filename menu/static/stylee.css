@@ -46,13 +46,13 @@ nav ul li a.activate {
     padding: 20px;
     background-color: rgb(255, 249, 249);
 }
-.brand{
+.library{
     text-align: center;
 }
-.brand h2{
+.library h2{
     color: #333;
 }
-.brand p{
+.library p{
     color: #666;
 }
 .pos{
