@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.template import loader
-from .models import kategori, Produk 
+from .models import kategori, Buku
 
 def members(request):
   data = kategori.objects.all()
@@ -12,19 +12,19 @@ def members(request):
   template = loader.get_template('index.html')
   return HttpResponse(template.render(context, request))
 
-def produk(request):
-  data = Produk.objects.all().values()
+def book(request):
+  data = Buku.objects.all().values()
   context = {
     "data" : data,
   }
-  template = loader.get_template('produk.html')
+  template = loader.get_template('book.html')
   return HttpResponse(template.render(context, request))
 
-def detail_produk(request, id):
+def detail_buku(request, id):
   data = Produk.objects.get(id=id)
-  template = loader.get_template('detail_produk.html')
+  template = loader.get_template('detail_buku.html')
   context = {
-    'produk': data,
+    'buku': data,
   }
   return HttpResponse(template.render(context, request))
 
@@ -34,8 +34,8 @@ def dt(request):
   template = loader.get_template('dt.html')
   return HttpResponse(template.render(context, request))
 
-def book(request):
+def list(request):
   context = {
   }
-  template = loader.get_template('book.html')
+  template = loader.get_template('list.html')
   return HttpResponse(template.render(context, request))

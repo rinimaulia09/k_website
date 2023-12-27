@@ -16,14 +16,26 @@
         <ul>
             <li><a href ="/members">Home</a></li>
             <li><a href ="/dt" class="active">Beranda</a></li>
-            <li><a href ="">Data</a></li>
-            <li><a href ="/produk">Menu</a></li>
+            <li><a href ="/detail">Data</a></li>
+            <li><a href ="/list">List</a></li>
             <li><a href ="/members">Logout</a></li>
         </ul>
         </nav>
     <div class="container">
         <div class="library">
         </div>
- 
+        <table border ="1">
+            <tr>
+                <th>ID</th>
+                <th>Nama Peminjam</th>
+            </tr>
+    
+            {% for dt in data %}
+            <tr>
+                <td>{{dt.id}}</td>
+                <td><a href="detail/{{dt.id}}">{{dt.nama_pinjam}}</a></td>
+            </tr>
+            {% endfor %}
+        </table>
 </body>
 </html>

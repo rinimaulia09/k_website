@@ -16,8 +16,8 @@
             <ul>
                 <li><a href ="/members">Home</a></li>
                 <li><a href ="/dt" class="active">Beranda</a></li>
-                <li><a href ="/book">Data</a></li>
-                <li><a href ="/produk">Menu</a></li>
+                <li><a href ="">Data</a></li>
+                <li><a href ="">Menu</a></li>
                 <li><a href ="/members">Logout</a></li>
             </ul>
             </nav>
@@ -27,18 +27,28 @@
    
             <h1>Daftar Menu</h1>
             <table border ="1">
+               
                 <tr>
-                    <th>Nama Produk</th>
-                    <th>{{ produk.namaProduk }}</th>
+                    <th>nama_pinjam</th>
+                    <th>{{ buku.nama_pinjam}}</th>
+                </tr>
+                <tr>
+                    <th>Judul buku</th>
+                    <th>{{ buku.judul }}</th>
+                </tr>
+                <tr>
+                    <th>tgl_pinjam</th>
+                    <th>{{ buku.tgl_pinjam}}</th>
+                </tr>
+                <tr>
+                    <th>kembalian</th>
+                    <th>{{ buku.kembalian}}</th>
                 </tr>
                 <tr>
                     <th>Kategori</th>
-                    <th>{{ produk.kategori}}</th>
+                    <th>{{ buku.kategori}}</th>
                 </tr>
-                <tr>
-                    <th>Harga</th>
-                    <th>{{ produk.harga}}</th>
-                </tr>
+                
             </table>   
     </head>
 </body>
