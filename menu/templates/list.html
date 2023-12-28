@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'stylee.css' %}">
+  
 
 </head>
 <body>
@@ -30,9 +31,7 @@
   <form action="" method="post">
   {{ from.as_p }}
   
-
       <label for="uname">Nama Peminjam</label><br>
-      <!-- <input type="text" class="form-control" id="uname" placeholder="" name="uname" > -->
       {{form.nama_pinjam}}
       <br><br>
       <label for="uname">Judul Buku</label><br>
@@ -48,9 +47,6 @@
       {{form.kategori}}<br><br>
 
       <input type="submit" value="kirim">
-      
-    
-      <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
 
   </form>
 </body>
