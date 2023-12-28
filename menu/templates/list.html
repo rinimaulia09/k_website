@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'stylee.css' %}">
-  <link rel="stylesheet" type="" href="{% static 'bootstrap.min.css' %}">
+
 </head>
 <body>
     <header>
@@ -26,26 +26,31 @@
         <div class="library">
             <h2>ISI DATA FORMULIR</h2>
     </div>
- 
+ {% csrf_token %}
   <form action="" method="post">
-    <div class="form-group">
-      <label for="uname">Nama Peminjam</label>
-      <input type="text" class="form-control" id="uname" placeholder="" name="uname" >
-    </div>
-    <div class="form-group">
-        <label for="uname">Judul Buku</label>
-        <input type="text" class="form-control" id="uname" placeholder="" name="uname" >
-      </div>
-    <div class="form-group">
-        <label for="uname">Tgl_Pinjam</label>
-        <input type="text" class="form-control" id="uname" placeholder="" name="uname">
-      </div>
-      <div class="form-group">
-        <label for="uname">Kembalian</label>
-        <input type="text" class="form-control" id="uname" placeholder="" name="uname">
-      </div>
+  {{ from.as_p }}
+  
+
+      <label for="uname">Nama Peminjam</label><br>
+      <!-- <input type="text" class="form-control" id="uname" placeholder="" name="uname" > -->
+      {{form.nama_pinjam}}
+      <br><br>
+      <label for="uname">Judul Buku</label><br>
+      {{form.judul_buku}}<br><br>
+     
+      <label for="uname">Tgl_Pinjam</label><br>
+      {{form.tgl_pinjam}}<br><br>
+     
+      <label for="uname">Kembalian</label><br>
+      {{form.kembalian}}<br><br>
+      
+      <label for="uname">Kategori</label><br>
+      {{form.kategori}}<br><br>
+
+      <input type="submit" value="kirim">
+      
     
-    <button type="submit" class="btn btn-primary">Submit</button>
+      <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
 
   </form>
 </body>
