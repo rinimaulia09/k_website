@@ -7,19 +7,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'stylee.css' %}">
-  
 
 </head>
 <body>
     <header>
-        <h1>WELCOME TO MY WEBSITE</h1>
+        <h1>WELCOME TO MY LIBRARY</h1>
       </header>
       <nav>
         <ul>
             <li><a href ="">Home</a></li>
-            <li><a href ="/dt" class="active">Beranda</a></li>
+            <li><a href ="/dt" class="active">Koleksi</a></li>
+            <li><a href ="/list">Isi Data</a></li>
             <li><a href ="/book">Data</a></li>
-            <li><a href ="">List</a></li>
             <li><a href ="/members">Logout</a></li>
         </ul>
         </nav>
@@ -30,6 +29,9 @@
  {% csrf_token %}
   <form action="" method="post">
   {{ from.as_p }}
+
+      <label for="uname">Kategori</label><br>
+      {{form.kategori}}<br><br>
   
       <label for="uname">Nama Peminjam</label><br>
       {{form.nama_pinjam}}
@@ -43,10 +45,11 @@
       <label for="uname">Kembalian</label><br>
       {{form.kembalian}}<br><br>
       
-      <label for="uname">Kategori</label><br>
-      {{form.kategori}}<br><br>
+     
 
       <input type="submit" value="kirim">
+
+      
 
   </form>
 </body>
